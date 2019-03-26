@@ -1,0 +1,4114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{927468AD-17AF-483E-B055-FA3EDC9C596E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BotisButtonBoard</RootNamespace>
+    <AssemblyName>BotisButtonBoard</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-login-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-login-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-login-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-login-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-login-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-logout-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-logout-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-logout-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-logout-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\account-logout-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-redo-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-redo-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-redo-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-redo-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-redo-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-undo-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-undo-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-undo-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-undo-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\action-undo-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-center-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-center-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-center-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-center-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-center-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\align-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\aperture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\aperture-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\aperture-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\aperture-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\aperture-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\aperture-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-bottom-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-bottom-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-bottom-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-bottom-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-bottom-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-bottom-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-bottom-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-bottom-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-bottom-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-bottom-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-top-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-top-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-top-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-top-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-circle-top-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-bottom-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-bottom-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-bottom-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-bottom-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-bottom-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-top-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-top-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-top-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-top-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-thick-top-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-top-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-top-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-top-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-top-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\arrow-top-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-spectrum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-spectrum-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-spectrum-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-spectrum-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-spectrum-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\audio-spectrum-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\badge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\badge-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\badge-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\badge-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\badge-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\badge-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ban.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ban-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ban-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ban-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ban-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ban-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bar-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bar-chart-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bar-chart-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bar-chart-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bar-chart-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bar-chart-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\basket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\basket-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\basket-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\basket-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\basket-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\basket-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-empty-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-empty-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-empty-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-empty-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-empty-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-full-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-full-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-full-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-full-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\battery-full-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\beaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\beaker-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\beaker-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\beaker-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\beaker-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\beaker-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bell-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bell-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bell-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bell-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bell-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bluetooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bluetooth-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bluetooth-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bluetooth-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bluetooth-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bluetooth-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bold-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bold-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bold-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bold-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bold-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bolt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bolt-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bolt-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bolt-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bolt-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bolt-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\book-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\book-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\book-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\book-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\book-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bookmark-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bookmark-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bookmark-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bookmark-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bookmark-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\box-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\box-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\box-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\box-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\box-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\briefcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\briefcase-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\briefcase-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\briefcase-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\briefcase-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\briefcase-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\british-pound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\british-pound-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\british-pound-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\british-pound-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\british-pound-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\british-pound-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\browser-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\browser-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\browser-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\browser-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\browser-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\brush-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\brush-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\brush-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\brush-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\brush-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bug-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bug-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bug-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bug-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bug-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bullhorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bullhorn-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bullhorn-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bullhorn-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bullhorn-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\bullhorn-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calculator-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calculator-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calculator-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calculator-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calculator-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calendar-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calendar-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calendar-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calendar-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\calendar-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\camera-slr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\camera-slr-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\camera-slr-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\camera-slr-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\camera-slr-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\camera-slr-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-bottom-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-bottom-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-bottom-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-bottom-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-bottom-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-top-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-top-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-top-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-top-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\caret-top-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cart-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cart-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cart-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cart-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cart-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chat-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chat-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chat-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chat-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chat-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\check-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\check-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\check-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\check-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\check-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-bottom-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-bottom-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-bottom-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-bottom-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-bottom-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-top-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-top-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-top-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-top-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\chevron-top-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-check-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-check-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-check-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-check-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-check-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-x-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-x-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-x-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-x-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\circle-x-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clipboard-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clipboard-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clipboard-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clipboard-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clipboard-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clock-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clock-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clock-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clock-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\clock-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-download-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-download-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-download-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-download-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-download-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-upload-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-upload-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-upload-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-upload-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloud-upload-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloudy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloudy-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloudy-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloudy-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloudy-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cloudy-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\code-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\code-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\code-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\code-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\code-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cog-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cog-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cog-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cog-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\cog-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-down-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-down-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-down-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-down-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-down-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-up-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-up-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-up-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-up-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\collapse-up-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\command.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\command-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\command-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\command-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\command-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\command-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\comment-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\comment-square-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\comment-square-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\comment-square-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\comment-square-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\comment-square-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\compass-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\compass-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\compass-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\compass-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\compass-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\contrast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\contrast-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\contrast-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\contrast-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\contrast-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\contrast-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\copywriting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\copywriting-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\copywriting-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\copywriting-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\copywriting-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\copywriting-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\credit-card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\credit-card-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\credit-card-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\credit-card-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\credit-card-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\credit-card-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\crop-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\crop-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\crop-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\crop-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\crop-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dashboard-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dashboard-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dashboard-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dashboard-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dashboard-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-download-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-download-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-download-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-download-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-download-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-upload-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-upload-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-upload-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-upload-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\data-transfer-upload-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\delete-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\delete-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\delete-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\delete-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\delete-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dial-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dial-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dial-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dial-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dial-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\document-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\document-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\document-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\document-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\document-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dollar-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dollar-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dollar-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dollar-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\dollar-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-sans-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\double-quote-serif-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\droplet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\droplet-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\droplet-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\droplet-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\droplet-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\droplet-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eject-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eject-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eject-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eject-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eject-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\elevator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\elevator-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\elevator-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\elevator-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\elevator-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\elevator-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ellipses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ellipses-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ellipses-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ellipses-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ellipses-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ellipses-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-closed-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-closed-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-closed-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-closed-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-closed-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-open-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-open-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-open-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-open-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\envelope-open-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\euro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\euro-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\euro-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\euro-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\euro-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\euro-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\excerpt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\excerpt-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\excerpt-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\excerpt-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\excerpt-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\excerpt-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-down-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-down-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-down-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-down-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-down-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-up-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-up-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-up-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-up-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\expand-up-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\external-link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\external-link-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\external-link-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\external-link-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\external-link-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\external-link-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eye-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eye-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eye-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eye-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eye-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eyedropper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eyedropper-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eyedropper-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eyedropper-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eyedropper-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\eyedropper-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\file-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\file-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\file-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\file-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\file-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fire-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fire-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fire-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fire-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fire-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flag-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flag-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flag-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flag-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flag-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flash-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flash-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flash-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flash-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\flash-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\folder-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\folder-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\folder-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\folder-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\folder-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fork-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fork-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fork-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fork-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fork-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-enter-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-enter-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-enter-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-enter-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-enter-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-exit-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-exit-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-exit-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-exit-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\fullscreen-exit-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\globe-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\globe-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\globe-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\globe-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\globe-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\graph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\graph-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\graph-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\graph-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\graph-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\graph-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-four-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-four-up-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-four-up-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-four-up-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-four-up-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-four-up-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-three-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-three-up-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-three-up-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-three-up-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-three-up-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-three-up-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-two-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-two-up-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-two-up-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-two-up-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-two-up-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\grid-two-up-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\hard-drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\hard-drive-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\hard-drive-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\hard-drive-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\hard-drive-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\hard-drive-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\header-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\header-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\header-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\header-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\header-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\headphones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\headphones-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\headphones-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\headphones-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\headphones-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\headphones-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\heart-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\heart-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\heart-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\heart-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\heart-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\home-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\home-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\home-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\home-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\home-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\image-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\image-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\image-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\image-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\image-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\inbox-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\inbox-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\inbox-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\inbox-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\inbox-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\infinity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\infinity-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\infinity-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\infinity-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\infinity-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\infinity-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\info-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\info-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\info-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\info-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\info-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\italic-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\italic-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\italic-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\italic-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\italic-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-center-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-center-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-center-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-center-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-center-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-left-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-left-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-left-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-left-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-left-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-right-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-right-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-right-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-right-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\justify-right-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\key-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\key-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\key-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\key-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\key-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\laptop-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\laptop-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\laptop-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\laptop-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\laptop-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\layers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\layers-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\layers-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\layers-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\layers-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\layers-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lightbulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lightbulb-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lightbulb-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lightbulb-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lightbulb-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lightbulb-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-broken-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-broken-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-broken-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-broken-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-broken-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-intact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-intact-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-intact-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-intact-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-intact-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\link-intact-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-rich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-rich-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-rich-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-rich-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-rich-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\list-rich-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\location-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\location-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\location-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\location-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\location-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-locked-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-locked-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-locked-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-locked-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-locked-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-unlocked-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-unlocked-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-unlocked-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-unlocked-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\lock-unlocked-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-circular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-circular-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-circular-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-circular-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-circular-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-circular-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-square.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-square-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-square-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-square-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-square-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\loop-square-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\magnifying-glass-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\magnifying-glass-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\magnifying-glass-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\magnifying-glass-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\magnifying-glass-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-marker-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-marker-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-marker-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-marker-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\map-marker-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-pause-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-pause-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-pause-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-pause-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-pause-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-play-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-play-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-play-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-play-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-play-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-record-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-record-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-record-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-record-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-record-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-backward-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-backward-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-backward-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-backward-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-backward-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-forward-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-forward-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-forward-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-forward-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-skip-forward-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-backward-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-backward-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-backward-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-backward-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-backward-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-forward-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-forward-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-forward-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-forward-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-step-forward-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-stop-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-stop-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-stop-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-stop-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\media-stop-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\medical-cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\medical-cross-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\medical-cross-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\medical-cross-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\medical-cross-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\medical-cross-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\menu-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\menu-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\menu-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\menu-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\menu-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\microphone-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\microphone-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\microphone-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\microphone-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\microphone-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\minus-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\minus-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\minus-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\minus-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\minus-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\monitor-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\monitor-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\monitor-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\monitor-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\monitor-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\moon-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\moon-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\moon-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\moon-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\moon-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\move-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\move-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\move-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\move-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\move-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\musical-note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\musical-note-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\musical-note-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\musical-note-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\musical-note-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\musical-note-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\paperclip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\paperclip-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\paperclip-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\paperclip-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\paperclip-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\paperclip-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pencil-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pencil-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pencil-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pencil-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pencil-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\people-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\people-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\people-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\people-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\people-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\person-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\person-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\person-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\person-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\person-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\phone-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\phone-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\phone-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\phone-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\phone-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pie-chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pie-chart-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pie-chart-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pie-chart-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pie-chart-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pie-chart-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pin-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pin-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pin-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pin-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pin-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\play-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\play-circle-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\play-circle-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\play-circle-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\play-circle-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\play-circle-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\plus-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\plus-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\plus-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\plus-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\plus-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\power-standby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\power-standby-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\power-standby-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\power-standby-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\power-standby-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\power-standby-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\print-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\print-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\print-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\print-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\print-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\project-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\project-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\project-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\project-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\project-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pulse-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pulse-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pulse-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pulse-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\pulse-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\puzzle-piece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\puzzle-piece-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\puzzle-piece-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\puzzle-piece-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\puzzle-piece-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\puzzle-piece-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\question-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\question-mark-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\question-mark-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\question-mark-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\question-mark-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\question-mark-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rain-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rain-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rain-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rain-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rain-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\random.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\random-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\random-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\random-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\random-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\random-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\reload-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\reload-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\reload-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\reload-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\reload-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-both.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-both-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-both-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-both-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-both-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-both-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-height-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-height-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-height-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-height-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-height-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-width-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-width-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-width-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-width-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\resize-width-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-alt-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-alt-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-alt-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-alt-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\rss-alt-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\script-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\script-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\script-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\script-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\script-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-boxed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-boxed-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-boxed-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-boxed-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-boxed-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\share-boxed-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\shield-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\shield-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\shield-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\shield-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\shield-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signal-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signal-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signal-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signal-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signal-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signpost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signpost-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signpost-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signpost-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signpost-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\signpost-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-ascending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-ascending-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-ascending-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-ascending-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-ascending-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-ascending-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-descending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-descending-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-descending-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-descending-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-descending-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sort-descending-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\spreadsheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\spreadsheet-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\spreadsheet-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\spreadsheet-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\spreadsheet-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\spreadsheet-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\star-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\star-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\star-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\star-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\star-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sun-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sun-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sun-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sun-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\sun-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tablet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tablet-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tablet-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tablet-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tablet-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tablet-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tag-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tag-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tag-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tag-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tag-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tags-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tags-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tags-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tags-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\tags-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\target.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\target-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\target-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\target-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\target-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\target-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\task-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\task-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\task-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\task-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\task-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\terminal-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\terminal-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\terminal-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\terminal-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\terminal-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\text-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\text-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\text-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\text-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\text-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-down-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-down-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-down-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-down-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-down-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-up-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-up-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-up-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-up-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\thumb-up-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\timer-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\timer-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\timer-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\timer-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\timer-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\transfer-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\transfer-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\transfer-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\transfer-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\transfer-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\trash-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\trash-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\trash-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\trash-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\trash-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\underline-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\underline-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\underline-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\underline-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\underline-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-bottom-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-bottom-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-bottom-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-bottom-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-bottom-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-center-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-center-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-center-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-center-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-center-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-top-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-top-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-top-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-top-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\vertical-align-top-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\video-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\video-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\video-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\video-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\video-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-high.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-high-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-high-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-high-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-high-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-high-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-low-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-low-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-low-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-low-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-low-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-off-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-off-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-off-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-off-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\volume-off-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\warning-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\warning-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\warning-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\warning-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\warning-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wifi-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wifi-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wifi-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wifi-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wifi-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wrench-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wrench-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wrench-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wrench-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\wrench-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\x-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\x-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\x-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\x-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\x-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\yen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\yen-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\yen-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\yen-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\yen-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\yen-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-in-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-in-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-in-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-in-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-in-8x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-out-2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-out-3x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-out-4x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-out-6x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\zoom-out-8x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
