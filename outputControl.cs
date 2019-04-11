@@ -10,20 +10,10 @@ using System.Windows.Forms;
 
 namespace BotisButtonBoard
 {
-    public partial class UserControl1 : UserControl
+    public partial class outputControl : UserControl
     {
-        public string btnName
-        {
-            get
-            {
-                return textBox1.Text;
-            }
-            set
-            {
-                textBox1.Text = value;
-            }
-        }
-
+        public delegate void closeEventHandler();
+        public event closeEventHandler tabClosed;
         public string fileLocation
         {
             get
@@ -35,7 +25,6 @@ namespace BotisButtonBoard
                 textBox2.Text = value;
             }
         }
-
         public string fileContents
         {
             get
@@ -48,22 +37,25 @@ namespace BotisButtonBoard
             }
         }
 
-        public UserControl1()
+        public outputControl()
         {
             InitializeComponent();
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        public void writeToFile()
+        {
+            if (textBox2.Text!="" && textBox3.Text!="")
+            {
+                System.IO.File.WriteAllText(textBox2.Text, textBox3.Text);
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -81,17 +73,10 @@ namespace BotisButtonBoard
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (tabClosed != null)
+                tabClosed();
             this.Dispose();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            button1.Text = textBox1.Text;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            System.IO.File.WriteAllText(textBox2.Text, textBox3.Text);
-        }
     }
 }
